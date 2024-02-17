@@ -11,7 +11,6 @@ const Sidebar = () => {
   return (
     <div className='bg-white border 1px text-black w-64 h-screen'>
       <div className='p-4 text-2xl font-bold text-emerald-600'>Connectify</div>
-
       <div className='p-4 font-bold'>Organization</div>
       <ul className='pl-4'>
         <li className='mb-2 cursor-pointer'>
@@ -47,16 +46,6 @@ const Sidebar = () => {
           </NavLink>
         </li>
 
-        <li className='mb-2 cursor-pointer'>
-          <NavLink
-            to='account/members'
-            className={({ isActive }) =>
-              `duration-200 ${isActive ? 'text-green-500' : 'text-gray-500'}  `
-            }
-          >
-            Members
-          </NavLink>
-        </li>
         <li onClick={toggleBillingSubmenu} className='cursor-pointer mb-2'>
           Billing
           {showBillingSubmenu && (

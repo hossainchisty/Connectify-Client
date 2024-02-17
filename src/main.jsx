@@ -11,6 +11,7 @@ import './index.css';
 import Setting from './components/Setting/Setting.jsx';
 import ApiKey from './components/ApiKey.jsx';
 import Overview from './components/Overview/Overview.jsx';
+import Usage from './components/Usage/Usage.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
       <Route path='/account/user-settings' element={<Setting />} />
       <Route path='/account/api-keys' element={<ApiKey />} />
       <Route path='/account/overview' element={<Overview />} />
+      <Route path='/account/usage' element={<Usage />} />
     </Route>
   )
 );
